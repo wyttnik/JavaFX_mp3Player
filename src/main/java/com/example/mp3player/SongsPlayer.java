@@ -47,6 +47,7 @@ public class SongsPlayer extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        stage.getIcons().add(new Image(new File("images/icon-play.png").toURI().toString()));
         VBox root = new VBox();
         root.setMaxHeight(165);
         root.setMaxWidth(654.0);
@@ -94,7 +95,7 @@ public class SongsPlayer extends Application {
         rewind.setPrefWidth(85);
         icon = new Image(new File("images/icon-rewind.png").toURI().toString());
         imgView = new ImageView(icon);
-        imgView.setFitHeight(23);
+        imgView.setFitHeight(34);
         imgView.setPreserveRatio(true);
         rewind.setGraphic(imgView);
         rewind.setFont(new Font("System",18));
@@ -104,7 +105,7 @@ public class SongsPlayer extends Application {
         fastForward.setPrefWidth(85);
         icon = new Image(new File("images/icon-fast-forward.png").toURI().toString());
         imgView = new ImageView(icon);
-        imgView.setFitHeight(23);
+        imgView.setFitHeight(34);
         imgView.setPreserveRatio(true);
         fastForward.setGraphic(imgView);
         fastForward.setFont(new Font("System",18));
